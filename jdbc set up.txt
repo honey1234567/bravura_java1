@@ -1,0 +1,2 @@
+outer JDBC-properties-java build path-libraries-add ext jar
+if module path is given then add module path then go to add ext jar

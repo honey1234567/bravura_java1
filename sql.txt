@@ -1,0 +1,44 @@
+Enter user-name: system/password
+number(2)//uname-system
+//password=password
+insert into student1 values (&name,&roll,&age,&marks);
+Enter value for name: 'divya'
+Enter value for roll: '56'
+Enter value for age: '87'
+Enter value for marks: '78'
+old   1: insert into student1 values (&name,&roll,&age,&marks)
+new   1: insert into student1 values ('divya','56','87','78')
+always give value according to datatype and give all vaues of their column./
+
+SQL> create user shreya identified by tiger;
+
+User created.
+
+SQL> grant create session to shreya;
+
+Grant succeeded.
+
+SQL> grant select on student1 to shreya;
+
+Grant succeeded.
+
+SQL> connect;
+Enter user-name: system
+Enter password:
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Warning: You are no longer connected to ORACLE.
+SQL> grant all on student1 to shreya;
+SP2-0640: Not connected
+SQL> connect;
+Enter user-name: system
+Enter password:password
+Connected.
+SQL> grant all on student1 to shreya;
+
+Grant succeeded.
+ grant connect,resource,dba to shreya;
+
+Grant succeeded.
