@@ -67,9 +67,13 @@ public class New {
         
              ResultSet rs=stmt.executeQuery("select * from Student1");  
             //  System.out.println(rs.getString(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4)+"  "+rs.getString(5)+"  "+rs.getString(6)+"  "+rs.getString(7)+"  "+rs.getString(8));  
-              while(rs.next())  
-              {
-                  System.out.println(rs.getString(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4));  
+             //String foramt1 = "%s\t| %s\t| %s\t| %s";
+             String stuc=String.format("%s\t| %s\t| %s\t| %s", "NAME", "ROLLNO", "AGE", "MARKS");
+             System.out.println(stuc);
+             while(rs.next())  
+              {   String p=String.format("%s\t| %s\t| %s\t| %s", rs.getString(1), rs.getString(2),rs.getString(3),rs.getString(4));
+                  System.out.println(p);
+                 // System.out.println(rs.getString(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4));  
 
               }
         }
