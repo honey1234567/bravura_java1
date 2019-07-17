@@ -1,0 +1,20 @@
+install tomcat and put all jar file of lib folder of tomcaton eclipse as in jdbc
+follow the steps 
+https://youtu.be/9iHKCnxUWqQ
+or 
+http://beginwithjava.com/servlet-jsp/web-application-overview/installing-tomcat.html
+==================================================================================
+in case the server is not in eclipse then first follow this link
+https://youtu.be/zV3HhOMbD_o
+or
+https://youtu.be/m3EFoI3PCds
+then any of the above link
+===============================================
+steps to run servlet follow this link
+How to create and run servlet in eclipse ide in beginners book
+and also follow telusko video
+or
+https://www.javatpoint.com/creating-servlet-in-eclipse-ide
+================================================================
+to run jdbc add refernce jdbc /lib/ all jar file in web content/webinf/lib manually
+but if you run normal jdbc withoutusing servlet then add jdbc /lib/ all jar file in referenced library
