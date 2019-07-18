@@ -1,0 +1,2 @@
+Look for workspace for ecliose files
+Add excetion package always and throws and try catch in case of an error
