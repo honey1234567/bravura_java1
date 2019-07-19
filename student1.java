@@ -65,9 +65,15 @@ public class student1 extends HttpServlet {
 	        
 	         if(manu.equalsIgnoreCase("delete"))
 	        {
-	        	 response.sendRedirect("http://localhost:8083/student/del");//calling del servelet(del.java)
+	        	 response.sendRedirect("http://localhost:8083/student/del");//calling del servelet(del.java) which is in delete package
 	        	 
              }
+	         if(manu.equalsIgnoreCase("show"))
+		        {
+		        	 response.sendRedirect("http://localhost:8083/student/show");
+		        	 
+	             }
+	         
     }
 	
 }	  
